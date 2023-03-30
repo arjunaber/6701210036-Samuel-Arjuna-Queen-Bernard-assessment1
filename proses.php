@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 // Ambil nilai dari textbox angka1 dan angka2
 $angka1 = $_POST["angka1"];
 $angka2 = $_POST["angka2"];
@@ -21,4 +22,29 @@ if ($operator == "+") {
 
 // Tampilkan hasil operasi aritmatika
 echo "Hasil:".$hasil;
+=======
+$angka1 = $_POST["angka1"];
+$angka2 = $_POST["angka2"];
+
+$operator = $_POST["operator"];
+
+switch ($operator) {
+	case "+":
+		$hasil = $angka1 + $angka2;
+		break;
+	case "-":
+		$hasil = $angka1 - $angka2;
+		break;
+	case "*":
+		$hasil = $angka1 * $angka2;
+		break;
+	case "/":
+		$hasil = $angka1 / $angka2;
+		break;
+	default:
+		$hasil = "Error: Operator tidak valid";
+}
+
+echo "Hasil: " . $hasil;
+>>>>>>> branch-6701210036
 ?>
